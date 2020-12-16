@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(MainActivity.this, Profissional.class);
-                intent.putExtra("EXTRA", position);
+                intent.putExtra("MAIN_SERVICO", mTitle[position]);
                 MainActivity.this.startActivity(intent);
             }
         });
