@@ -7,10 +7,10 @@
     tools:context=".Profissional">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageViewPerfil"
         android:layout_width="154dp"
         android:layout_height="210dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -18,13 +18,13 @@
         app:srcCompat="@drawable/keanu" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonProfissional"
         android:layout_width="399dp"
         android:layout_height="89dp"
         android:text="OUTRO PROFISSIONAL"
         android:textSize="30sp"
         app:backgroundTint="#DD9159"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintBottom_toTopOf="@+id/buttonServico"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -35,12 +35,12 @@
         android:text="LIGAR"
         android:textSize="50sp"
         app:backgroundTint="#84CF69"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/buttonProfissional"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/buttonServico"
         android:layout_width="399dp"
         android:layout_height="89dp"
         android:text="OUTRO SERVICO"
@@ -51,22 +51,22 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textViewDescricao"
         android:layout_width="144dp"
         android:layout_height="20dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="20dp"
         android:gravity="center"
         android:text="Keanu Reeves, 50 anos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageViewPerfil" />
 
     <TextView
         android:id="@+id/servicoTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:text="SERVICO"
         android:textSize="50sp"
         app:layout_constraintEnd_toEndOf="parent"
