@@ -102,6 +102,7 @@ public class MainActivity extends AppCompatActivity {
 
                     while (it.hasNext()) {
                         Map.Entry pair = (Map.Entry) it.next();
+                        //if (iterateNum==0){ mTitle[iterateNum] = "Serviços"; iterateNum++; }
                         mTitle[iterateNum++] = pair.getValue().toString();
                     }
                     adapter.setData(mTitle);
@@ -142,6 +143,13 @@ public class MainActivity extends AppCompatActivity {
             //button.setText(rTitle[position]);
             TextView myTitle = row.findViewById(R.id.textView);
             myTitle.setText(rTitle[position]);
+            /*
+            if (position == 0 ){
+                myTitle.setBackgroundColor(getResources().getColor(R.color.white));
+                myTitle.setTextColor(getResources().getColor(R.color.black));
+            }
+            */
+            if((position%2)==0) myTitle.setBackgroundColor(getResources().getColor(R.color.purple_500));
             return row;
         }
 
