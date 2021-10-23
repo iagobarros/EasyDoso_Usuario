@@ -40,9 +40,9 @@ public class Profissional extends AppCompatActivity {
         Intent intent = getIntent();
         //
         DadosProfissional temp = new DadosProfissional();
-        temp.setPhone("+5581997992574");
-        temp.setFullName("Keanu Reeves");
-        temp.setServices("Taxi");
+        temp.setPhone("+55 81 99881 0630");
+        temp.setFullName("Iago Barros");
+        temp.setServices("Eletricista");
         dadosProfissional.add(temp);
         DadosProfissional temp1 = new DadosProfissional();
         temp1.setPhone("+5581997992574");
@@ -84,7 +84,7 @@ public class Profissional extends AppCompatActivity {
         ImageView perfil = (ImageView) findViewById(R.id.imageViewPerfil);
 
         switch (posicao) {
-            case 0: perfil.setImageResource(R.drawable.keanu); break;
+            case 0: perfil.setImageResource(R.drawable.stevejobs); break;
             case 1: perfil.setImageResource(R.drawable.billgates); break;
             case 2: perfil.setImageResource(R.drawable.markzuckerberg); break;
             case 3: perfil.setImageResource(R.drawable.mariliamendonca); break;
