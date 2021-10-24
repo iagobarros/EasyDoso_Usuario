@@ -13,8 +13,9 @@ public class DadosProfissional {
     private String location_longitude;
     private String birthDate;
     private String email;
+    private String imageName;
 
-    public DadosProfissional(String phone, String location_latitude, String cpf, String fullName, String services, String location_longitude, String birthDate, String email) {
+    public DadosProfissional(String phone, String location_latitude, String cpf, String fullName, String services, String location_longitude, String birthDate, String email, String imageName) {
         this.phone = phone;
         this.location_latitude = location_latitude;
         this.cpf = cpf;
@@ -23,6 +24,7 @@ public class DadosProfissional {
         this.location_longitude = location_longitude;
         this.birthDate = birthDate;
         this.email = email;
+        this.imageName = imageName;
     }
     public DadosProfissional(){}
 
@@ -89,4 +91,8 @@ public class DadosProfissional {
     public void setEmail(String email) {
         this.email = email;
     }
+
+    public String getImageName(){return imageName;}
+
+    public void setImageName(String imageName){this.imageName = imageName;}
 }

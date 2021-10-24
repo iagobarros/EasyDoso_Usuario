@@ -54,7 +54,8 @@ public class MainActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Log.d("KEBAB2", mTitle[position]);
+//                Log.d("KEBAB2", mTitle[position]);
+                Log.d("Category clicked : ",mTitle[position]);
                 Intent intent = new Intent(MainActivity.this, Profissional.class);
                 intent.putExtra("TITULO", mTitle[position]);
 
